@@ -1,0 +1,203 @@
+.chicle-regular {
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-font1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: rgb(85, 85, 100);
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    color: rgb(225, 250, 255);
+    justify-content: center;
+    font-family: 'Chicle', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+}
+body::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.25) 25%, rgba(255, 255, 255, 0.5) 75%, rgba(225, 247, 255, 0.7) 100%);
+    pointer-events: none;
+    position: fixed;
+    filter: blur(100);
+    z-index: 5;
+}
+
+.black-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 10;
+  pointer-events: none;
+  animation: fadein 5s ease forwards;
+}
+
+
+h1 {
+    font-size: 48px;
+    animation: trippy-text 3s infinite ease forwards;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    pointer-events: none;
+}
+h2 {
+    font-size: 24px;
+}
+
+.glowing-text {
+    animation: magic-text 5s infinite ease forwards;
+}
+
+@keyframes trippy-text {
+    0% {
+        font-size: 97.5%;
+    }
+    50% {
+        font-size: 100%;
+    }
+    100% {
+        font-size: 97.5%;
+    }
+}
+
+#background-audio {
+    filter: opacity(0);
+}
+
+@keyframes magic-text {
+    0%{
+        text-shadow: 0 0 15px rgb(210, 255, 250);
+    }
+    50%{
+        text-shadow: 0 0 50px rgb(210, 255, 250);
+    }
+    100%{
+        text-shadow: 0 0 15px rgb(210, 255, 250);
+    }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.poems-container {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.poeme {
+    display: none;
+    font-size: 32px;
+    font-family: 'Caveat' !important;
+    color: rgb(75, 75, 105);
+    margin-top: 10px;
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 70%;
+    padding: 3px;
+    text-align: center;
+    background-color: rgba(225, 247, 255, 0.915);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgba(180, 185, 195, 0.7);
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
+}
+input[type="checkbox"] {
+    display: none;
+}
+label {
+    font-style: italic;
+    cursor: pointer;
+    color: rgb(190, 215, 220);
+    margin: 0 auto;
+    margin-top: 25px;
+    display: inline-block;
+    background-color: rgba(225, 247, 255, 0.915);
+    filter: drop-shadow(0 0 5px rgba(225, 247, 255, 0.7));
+    width: 200px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgba(180, 185, 195, 0.7);
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
+}
+input[type="checkbox"]:checked + label + .poeme {
+    display: block;
+}
+
+.auteur{
+    text-align: right !important;
+    margin-right: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.firstpoem {
+    margin-top: 75px !important;
+}
+
+footer {
+    font-size: 34px;
+    background-color: rgba(225, 247, 255, 0.7);
+    border: 2px solid rgba(180, 185, 195, 0.7);
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 25%; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+a {
+    color: rgb(225, 250, 255);
+    transition: all 0.3s ease-in-out;
+}
+a:visited {
+    color: rgb(225, 250, 255);  
+}
+a:hover{
+    color: rgb(175, 175, 175);
+}
+label:hover {
+    color: rgb(175, 175, 175);
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        width: 50%;
+    }
+}

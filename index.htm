@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chicle&display=swap" rel="stylesheet">
+    <title>Adieux</title>
+</head>
+<body>
+    <script>
+        window.alert("Cette page contient de la musique.")
+    </script>
+    <div class="black-fade"></div>
+
+    <audio id="background-audio" autoplay controls  loop>
+        <source src="YEN¥AMA - SQSC.mp3" type="audio/ogg">
+    </audio>
+
+    <h1 class="glowing-text">Adieux</h1>
+    
+    <input type="checkbox" id="toggle-poeme1">
+    <label onclick="playAudio('click.ogg')" class="firstpoem" id="firstlabel" for="toggle-poeme1">Mystère
+    </label>
+    <div class="poeme">
+        <p>Et me voilà enfin revenu au lycée,<br>
+            Je la salue, m'inclinant devant sa beauté.<br>
+            Ses yeux sombres ne cessent d'accroître le mystère.<br>
+            Pourquoi son regard est il vif, tel une panthère ?<br>
+            Sa longue chevelure a-t-elle la texture des ronces ?<br>
+            Et tant d'autres questions dont je n'ai les réponses.<br>
+            Mais je pourrais bien boire le venin du crotale,<br>
+            Pour satisfaire la splendide princesse orientale.<br>
+        </p>
+        <p class="auteur">- Hélas</p>
+    </div><br>
+    <input type="checkbox" id="toggle-poeme2">
+    <label onclick="playAudio('click.ogg')" id="firstlabel" for="toggle-poeme2">Ecstasy
+    </label>
+    <div class="poeme">
+        <p>Déesse orientale, que jalouse Cléopatre,<br>
+            Tu arbores sur ton corps les septs merveilles du Monde.<br>
+            Et chaque jour, ta beauté ne manque de m'abattre.<br>
+            Je fonderais bien devant tes belles joues rondes,<br>
+            Et à tes pieds, je pourrais aussi m'incliner,<br>
+            Pour te démontrer mon humble courtoisie.<br>
+            Si j'ignore où, toi, splendide princesse, es tu née,<br>
+            Je sais que tu me réjouis autant que l'ecstasy.<br>
+        </p>
+        <p class="auteur">- Hélas</p>
+    </div><br>
+    <input type="checkbox" id="toggle-poeme3">
+    <label onclick="playAudio('click.ogg')" id="firstlabel" for="toggle-poeme3">Dysphorie
+    </label>
+    <div class="poeme">
+        <p>Sogand, sur le trajet, tu m'as l'air déprimée,<br>
+            Et j'aurais bien envie de mieux te connaître,<br>
+            Car je sais qu'il est impossible de renaitre.<br>
+            Oh ! Que j'ai bien peur de commencer à t'aimer !<br>
+        </p>
+        <p class="auteur">- Hélas</p>
+    </div><br>
+    <input type="checkbox" id="toggle-poeme4">
+    <label onclick="playAudio('click.ogg')" id="firstlabel" for="toggle-poeme4">Poèsie Moderne
+    </label>
+    <div class="poeme">
+        <p>J'admets que, pour me rendre félicité,<br>
+            Un seul de ses messages me suffit pour tomber,<br>
+            Dans les abysses de sa beauté, bouche bée,<br>
+            Et je pense que sa salive est un bon thé,<br>
+            Apaisant comme la plus pure des héroïnes.<br>
+            Suis-je fou ? de me laisser tomber, pour mon cœur ?<br>
+            La magnificence de la princesse m'appeure,<br>
+            Elle est aussi puissante que la Lamaline.<br>
+        </p>
+        <p class="auteur">- Hélas</p>
+    </div><br>
+    <footer><a onclick="playAudio('click.ogg')" href="https://soundcloud.com/yenyama"><span>Crédits musicaux</span></a></footer>
+    <script src="script.js"></script>
+</body>
+</html>
