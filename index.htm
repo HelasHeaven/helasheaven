@@ -11,7 +11,7 @@
 </head>
 <body>
     <script>
-        window.alert("Cette page contient de la musique, afin d'obtenir une expérience plus immersive, il est conseillé d'activer la lecture automatique de l'audio sur cette page, via les paramètres de confidentialité du navigateur.")
+        window.alert("Cette page contient de la musique, afin d'obtenir une expérience plus immersive, il est conseillé d'activer la lecture automatique de l'audio sur cette page, via les paramètres de confidentialité du navigateur. Sinon, le lecteur se trouve en bas à droite.")
     </script>
     <div class="black-fade"></div>
 
@@ -20,7 +20,7 @@
     </audio>
 
     <h1 class="glowing-text">Adieux</h1>
-    
+    <img src="dracunyan.webp" id="dracunyan">
     <input type="checkbox" id="toggle-poeme1">
     <label onclick="playAudio('click.ogg')" class="firstpoem" id="firstlabel" for="toggle-poeme1">Mystère
     </label>
@@ -77,7 +77,7 @@
         </p>
         <p class="auteur">- Hélas</p>
     </div><br>
-    <footer><a onclick="playAudio('click.ogg')" href="https://soundcloud.com/yenyama"><span>Crédits musicaux</span></a></footer>
+    <footer><a target="_blank" onclick="playAudio('click.ogg')" href="https://soundcloud.com/yenyama"><span>Crédits musicaux</span></a></footer>
     <script src="script.js"></script>
 </body>
 </html>

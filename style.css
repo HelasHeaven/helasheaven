@@ -83,7 +83,14 @@ h2 {
 }
 
 #background-audio {
-    filter: opacity(0);
+    position: fixed;
+    width: 5%;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    border-radius: 8px;
+    background-color:rgb(190, 215, 220);
+    filter: drop-shadow(0 0 50px rgb(108, 122, 124));
 }
 
 @keyframes magic-text {
@@ -118,7 +125,7 @@ h2 {
     margin-top: 10px;
     margin: 20px auto;
     border-radius: 12px;
-    width: 75%;
+    width: 50%;
     padding: 3px;
     text-align: center;
     background-color: rgba(225, 247, 255, 0.915);
@@ -199,5 +206,40 @@ label:hover {
 @media only screen and (max-width: 768px) {
     footer {
         width: 50%;
+    }
+    #background-audio {
+        width: 15% !important;
+    }
+    .poeme {
+    display: none;
+    font-size: 24px;
+    width: 75% !important;
+    }
+    label {
+        font-size: 40px;
+    }
+}
+
+#dracunyan {
+    position: fixed;
+    width: 84px;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    z-index: 8;
+    animation: shining-img 4s infinite ease;
+}
+
+@keyframes shining-img {
+    0% {
+        filter: drop-shadow(0 0 25px #640707);
+    }
+    50% {
+        filter: drop-shadow(0 0 15px #640707);
+    }
+    100% {
+        filter: drop-shadow(0 0 25px #640707);
     }
 }
