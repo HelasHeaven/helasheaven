@@ -218,7 +218,7 @@ label:hover {
         width: 50%;
     }
     #background-audio {
-        width: 15% !important;
+        width: 17.5% !important;
     }
     .poeme {
     display: none;
@@ -252,6 +252,7 @@ label:hover {
     bottom: 0;
     margin-bottom: 75px;
     margin-left: 10px;
+    margin-right: 10px;
     z-index: 11;
     font-size: 24px;
     font-family: "VT323", monospace;

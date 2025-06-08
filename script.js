@@ -11,7 +11,7 @@ const messages = [
   "Parfois j'aimerais avoir des émotions...",
   "Quelle chance tu as d'être dotée d'émotions...",
   "Profites de cette chance...",
-  "N'hésite jamais à montrer cette chance !",
+  "N'hésite jamais à la montrer !",
   "..."
 ];
 
