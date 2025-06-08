@@ -11,6 +11,12 @@
   font-style: normal;
 }
 
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     background-color: rgb(85, 85, 100);
     display: flex;
@@ -169,14 +175,18 @@ input[type="checkbox"]:checked + label + .poeme {
     text-decoration: underline;
 }
 
-.firstpoem {
-    margin-top: 75px !important;
+#firstpoem {
+    margin-top: 100px !important;
+}
+#lastpoem {
+    margin-bottom: 100px !important;
 }
 
 footer {
     font-size: 34px;
     background-color: rgba(225, 247, 255, 0.7);
     border: 2px solid rgba(180, 185, 195, 0.7);
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
     border-radius: 8px;
     margin: 0 auto;
     width: 25%; 
@@ -221,16 +231,38 @@ label:hover {
 }
 
 #dracunyan {
+    display: inline-block;
+    vertical-align: middle;
+}
+#dracunyan-1 {
     position: fixed;
     width: 84px;
-    pointer-events: none;
-    right: 0;
-    top: 0;
-    margin-top: 10px;
-    margin-right: 10px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
     z-index: 8;
     animation: shining-img 4s infinite ease;
 }
+#dracunyan-2 {
+    position: fixed;
+    width: fit-content;
+    padding-right: 5px; padding-left: 5px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 75px;
+    margin-left: 10px;
+    z-index: 5;
+    font-size: 24px;
+    font-family: "VT323", monospace;
+    border-radius: 8px;
+    color: rgb(102, 112, 113);
+    background-color: rgba(225, 247, 255, 0.7);
+    border: 2px solid rgba(180, 185, 195, 0.7);
+    border-radius: 8px;
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
+}
+
 
 @keyframes shining-img {
     0% {

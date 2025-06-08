@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chicle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chicle&family=VT323&display=swap" rel="stylesheet">
     <title>Adieux</title>
 </head>
 <body>
@@ -20,9 +20,12 @@
     </audio>
 
     <h1 class="glowing-text">Adieux</h1>
-    <img src="dracunyan.webp" id="dracunyan">
+    <div id="dracunyan">
+        <img src="dracunyan.webp" id="dracunyan-1" onclick="playAudio('click.ogg')">
+        <div id="dracunyan-2"><span id="dracunyan-chat">...</span></div>
+    </div>
     <input type="checkbox" id="toggle-poeme1">
-    <label onclick="playAudio('click.ogg')" class="firstpoem" id="firstlabel" for="toggle-poeme1">Mystère
+    <label onclick="playAudio('click.ogg')" id="firstpoem" id="firstlabel" for="toggle-poeme1">Mystère
     </label>
     <div class="poeme">
         <p>Et me voilà enfin revenu au lycée,<br>
@@ -65,7 +68,7 @@
     <input type="checkbox" id="toggle-poeme4">
     <label onclick="playAudio('click.ogg')" id="firstlabel" for="toggle-poeme4">Poèsie Moderne
     </label>
-    <div class="poeme">
+    <div id="lastpoem" class="poeme">
         <p>J'admets que, pour me rendre félicité,<br>
             Un seul de ses messages me suffit pour tomber,<br>
             Dans les abysses de sa beauté, bouche bée,<br>
