@@ -273,7 +273,7 @@ footer {
     left: 0;
     margin-bottom: 10px;
     transition: all 0.3s ease-in-out;
-    z-index: 9;
+    z-index: 19;
 }
 
 a {
