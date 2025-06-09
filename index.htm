@@ -20,11 +20,19 @@
     </audio>
 
     <h1 class="glowing-text">Adieux</h1>
+
+    <video id="background-video" autoplay loop playsinline muted>
+        <source src="sideimage.mp4" type="video/mp4"></video>
+
     <div id="dracunyan">
         <img src="dracunyan.webp" id="dracunyan-1" onclick="playAudio('click.ogg')">
         <div id="dracunyan-2"><span id="dracunyan-chat">...</span></div>
     </div>
-    <div id="sideimage"><span id="sidetxt">Hélas !</span><video id="background-video" autoplay loop muted><source src="sideimage.mp4" type="video/mp4"></video></div>
+
+    <div id="sidesection"><span class="sidetxt" id="mailbox-title">Boîte aux lettres</span>
+    <span class="sidetxt" onclick="playAudio('paper.ogg')" id="mail"><a target="_blank" href="./mail-1/index.htm">Lettre</a></span>
+    </div>
+
     <input type="checkbox" id="toggle-poeme1">
     <label onclick="playAudio('click.ogg')" id="firstpoem" id="firstlabel" for="toggle-poeme1">Mystère
     </label>
@@ -115,7 +123,7 @@
         </p>
         <p class="auteur">- Hélas</p>
     </div><br>
-    <footer><a target="_blank" onclick="playAudio('click.ogg')" href="https://soundcloud.com/yenyama"><span>Crédits musicaux</span></a></footer>
+    <footer><a target="_blank" onclick="playAudio('click.ogg')" href="https://soundcloud.com/yenyama"><span>Crédits</span></a></footer>
     <script src="script.js"></script>
 </body>
 </html>
