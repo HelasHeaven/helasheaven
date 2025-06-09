@@ -51,7 +51,7 @@ body::before {
   width: 100%;
   height: 100%;
   background-color: black;
-  z-index: 20;
+  z-index: 22;
   pointer-events: none;
   animation: fadein 5s ease forwards;
 }
@@ -203,6 +203,7 @@ h2 {
     margin: 20px auto;
     border-radius: 12px;
     width: 50%;
+    z-index: 18;
     padding: 3px;
     text-align: center;
     background-color: rgba(225, 247, 255, 0.915);
@@ -355,7 +356,7 @@ label:hover {
     bottom: 0;
     margin-bottom: 10px;
     margin-left: 10px;
-    z-index: 8;
+    z-index: 19;
     animation: shining-img 4s infinite ease;
 }
 #dracunyan-2 {
@@ -367,7 +368,7 @@ label:hover {
     margin-bottom: 75px;
     margin-left: 10px;
     margin-right: 10px;
-    z-index: 19;
+    z-index: 20;
     font-size: 24px;
     font-family: "VT323", monospace;
     border-radius: 8px;
