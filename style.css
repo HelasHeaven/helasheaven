@@ -28,6 +28,7 @@ body {
     font-weight: normal;
     font-style: normal;
     font-size: 48px;
+    height: 100%;
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
 }
@@ -56,6 +57,37 @@ body::before {
   animation: fadein 5s ease forwards;
 }
 
+#sideimage {
+    position: fixed;
+    right: 0;
+    z-index: -15;
+    margin: 0 auto;
+    width: 150px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    border-radius: 15px;
+    border: 2px solid rgba(180, 185, 195, 0.7);
+    color: rgb(225, 250, 255);
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
+    margin-bottom: 5%;
+    margin-top: 1.5%;
+    height: 85.5%;
+}
+#background-video {
+    position: relative;
+    z-index: -15;
+}
+#sidetxt {
+    position: fixed;
+    z-index: -14;
+    margin-top: 25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
+}
 
 h1 {
     font-size: 48px;
@@ -150,8 +182,7 @@ label {
     margin-top: 25px;
     display: inline-block;
     background-color: rgba(225, 247, 255, 0.915);
-    filter: drop-shadow(0 0 5px rgba(225, 247, 255, 0.7));
-    width: 200px;
+    width: 500px;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
@@ -176,10 +207,15 @@ input[type="checkbox"]:checked + label + .poeme {
 }
 
 #firstpoem {
-    margin-top: 100px !important;
+    margin-top: 7.5% !important;
 }
-#lastpoem {
-    margin-bottom: 100px !important;
+.lastpoem {
+    margin-bottom: 5% !important;
+}
+
+.lastpoem2 {
+    margin-top: -3.5%;
+    margin-bottom: 5%;
 }
 
 footer {
@@ -211,6 +247,7 @@ a:hover{
 }
 label:hover {
     color: rgb(175, 175, 175);
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
@@ -223,10 +260,45 @@ label:hover {
     .poeme {
     display: none;
     font-size: 24px;
-    width: 75% !important;
+    width: 55% !important;
+    left: 0;
+    margin-left: 1%;
+    padding: 2.5%;
+    }
+    h1 {
+        margin-right: 150px;
+        font-size: 64px;
+        position: sticky !important;
+        margin-bottom: -17.5%;
     }
     label {
-        font-size: 40px;
+        font-size: 32px;
+        width: 225px; 
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    #firstpoem {
+        margin-top: 25% !important;
+    }
+    .lastpoem {
+    margin-bottom: 25% !important;
+    }
+    .lastpoem2 {
+        margin-top: -20% !important;
+        margin-bottom: 25% !important;
+    }
+    #sideimage {
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid rgba(180, 185, 195, 0.7);
+    filter: drop-shadow(0 0 10px rgba(225, 247, 255, 0.7));
+    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-right: 2.5%;
+    }
+    #dracunyan-1 {
+        opacity: 0.85;
     }
 }
 
@@ -237,6 +309,7 @@ label:hover {
 #dracunyan-1 {
     position: fixed;
     width: 84px;
+    opacity: 0.75;
     left: 0;
     bottom: 0;
     margin-bottom: 10px;
